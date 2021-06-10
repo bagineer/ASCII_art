@@ -39,6 +39,7 @@ print(a[1:3, 1:4])
 '''
 
 
+'''
 a = np.array([[0, 0, 0, 0, 0],
               [1, 1, 1, 1, 0],
               [1, 1, 1, 1, 0],
@@ -55,3 +56,9 @@ b = np.array([[False, False, False, False, False],
 
 img = Image.fromarray(b).convert("L")
 img.show()
+'''
+
+from make_ascii_art import *
+
+app = App()
+app.mainloop()

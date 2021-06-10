@@ -10,7 +10,7 @@ def my_func(n, max_val, x):
     return round(y / n, 3)
 
 src_path = "./images/"
-src_name = "처신.jpg"
+src_name = "KakaoTalk_20210610_173102572.jpg"
 img = Image.open(src_path+src_name, mode="r")
 
 n_rows, n_cols = img.size[0] // ROW, img.size[1] // COL
