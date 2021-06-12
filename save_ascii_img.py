@@ -4,18 +4,19 @@ import pandas as pd
 
 ROW, COL = 8, 5
 MAX_SIZE = 300
+C = 5
 
 def my_func(n, max_val, x):
     y = int(x / max_val * n)
     return round(y / n, 3)
 
 src_path = "./images/"
-src_name = "KakaoTalk_20210610_173102572.jpg"
+src_name = "C293E467-474C-4E3F-B9AF-C38D83901796.jpeg"
 img = Image.open(src_path+src_name, mode="r")
 
-n_rows, n_cols = img.size[0] // ROW, img.size[1] // COL
+n_rows, n_cols = img.size[1] // ROW, img.size[0] // COL
 print(img.size)     # width, height
-size = (n_rows*ROW, n_cols*COL)
+size = (n_cols*C, n_rows*C)
 
 scale = 1
 if size[0] > MAX_SIZE:
